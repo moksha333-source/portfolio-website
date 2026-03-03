@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-// Using Inter as the standard font for Next.js 14
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -17,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
+      <body className="antialiased font-sans">
         {children}
       </body>
     </html>
