@@ -29,7 +29,7 @@ export default function RootLayout({
       <body>
         {children}
 
-        {/* Load your script.js from public/ */}
+        {/* Load your script.js from public */}
         <Script src="/script.js" strategy="afterInteractive" />
       </body>
     </html>
