@@ -1,281 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
+export default function Home() {
+  return (
+    <main>
+      {/* Background Layers */}
+      <div className="background-layer"></div>
+      <div className="scroll-background"></div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Komarapuri Moksha Vardhan - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-
-<body>
-    <!-- Background Layers -->
-    <div class="background-layer"></div>
-    <div class="scroll-background"></div>
-
-    <!-- Navigation Header -->
-    <header class="navbar">
-        <nav class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">MV</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      {/* Navigation Header */}
+      <header className="navbar">
+        <nav className="nav-container">
+          <div className="nav-logo">
+            <span className="logo-text">MV</span>
+          </div>
+          <ul className="nav-menu">
+            <li className="nav-item">
+              <a href="#home" className="nav-link">Home</a>
+            </li>
+            <li className="nav-item">
+              <a href="#about" className="nav-link">About</a>
+            </li>
+            <li className="nav-item">
+              <a href="#projects" className="nav-link">Projects</a>
+            </li>
+            <li className="nav-item">
+              <a href="#contact" className="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div className="hamburger">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
         </nav>
-    </header>
+      </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-name">
-                    <span class="greeting">Hello, I am</span>
-                    <span class="name-letter">K</span>
-                    <span class="name-letter">o</span>
-                    <span class="name-letter">m</span>
-                    <span class="name-letter">a</span>
-                    <span class="name-letter">r</span>
-                    <span class="name-letter">a</span>
-                    <span class="name-letter">p</span>
-                    <span class="name-letter">u</span>
-                    <span class="name-letter">r</span>
-                    <span class="name-letter">i</span><br>
-                    <span class="name-letter">M</span>
-                    <span class="name-letter">o</span>
-                    <span class="name-letter">k</span>
-                    <span class="name-letter">s</span>
-                    <span class="name-letter">h</span>
-                    <span class="name-letter">a</span><br>
-                    <span class="name-letter">V</span>
-                    <span class="name-letter">a</span>
-                    <span class="name-letter">r</span>
-                    <span class="name-letter">d</span>
-                    <span class="name-letter">h</span>
-                    <span class="name-letter">a</span>
-                    <span class="name-letter">n</span>
-                </h1>
-                <p class="hero-subtitle">Mechanical Engineering Student | Tech Enthusiast | Problem Solver</p>
-                <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary">Learn More</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
+      {/* Hero Section */}
+      <section id="home" className="hero">
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1 className="hero-name">
+              <span className="greeting">Hello, I am</span>
+              <span className="name-letter">K</span>
+              <span className="name-letter">o</span>
+              <span className="name-letter">m</span>
+              <span className="name-letter">a</span>
+              <span className="name-letter">r</span>
+              <span className="name-letter">a</span>
+              <span className="name-letter">p</span>
+              <span className="name-letter">u</span>
+              <span className="name-letter">r</span>
+              <span className="name-letter">i</span><br />
+              <span className="name-letter">M</span>
+              <span className="name-letter">o</span>
+              <span className="name-letter">k</span>
+              <span className="name-letter">s</span>
+              <span className="name-letter">h</span>
+              <span className="name-letter">a</span><br />
+              <span className="name-letter">V</span>
+              <span className="name-letter">a</span>
+              <span className="name-letter">r</span>
+              <span className="name-letter">d</span>
+              <span className="name-letter">h</span>
+              <span className="name-letter">a</span>
+              <span className="name-letter">n</span>
+            </h1>
+            <p className="hero-subtitle">
+              Mechanical Engineering Student | Tech Enthusiast | Problem Solver
+            </p>
+            <div className="hero-buttons">
+              <a href="#about" className="btn btn-primary">Learn More</a>
+              <a href="#contact" className="btn btn-secondary">Get in Touch</a>
             </div>
-            <div class="hero-image">
-                <div class="image-container">
-                    <img src="https://res.cloudinary.com/dner8a9y0/image/upload/v1772387018/Gemini_Generated_Image_2kxc7q2kxc7q2kxc_x5s0ak.png"
-                        alt="Komarapuri Moksha Vardhan Outline Portrait" class="hero-portrait">
-                    <div class="image-glow"></div>
-                </div>
+          </div>
+        </div>
+        <div className="hero-image">
+          <div className="image-container">
+            <img
+              src="https://res.cloudinary.com/dner8a9y0/image/upload/v1772387018/Gemini_Generated_Image_2kxc7q2kxc7q2kxc_x5s0ak.png"
+              alt="Komarapuri Moksha Vardhan Outline Portrait"
+              className="hero-portrait"
+            />
+            <div className="image-glow"></div>
+          </div>
+        </div>
+        <div className="scroll-indicator">
+          <div className="scroll-arrow"></div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="about">
+        <div className="container">
+          <h2 className="section-title">About Me</h2>
+          <div className="about-content">
+            <div className="about-text">
+              <div className="objective-text">
+                <p>
+                  Motivated B.Tech Mechanical Engineering student seeking part-time opportunities in tech
+                  fields including data entry, management, website design, AI prompting, and problem solving.
+                </p>
+              </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="objective-text">
-                        <p>Motivated B.Tech Mechanical Engineering student seeking part-time opportunities in tech
-                            fields including data entry, management, website design, AI prompting, and problem solving.
-                        </p>
-                    </div>
-
-                    <div class="skills-section">
-                        <h3 class="sub-heading">Skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h4>Technical Skills</h4>
-                                <ul>
-                                    <li>HTML & CSS</li>
-                                    <li>Python</li>
-                                    <li>SQL</li>
-                                    <li>CAD & Fusion 360</li>
-                                    <li>Adobe Photo Editing</li>
-                                    <li>AI Prompting & Integration</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h4>Soft Skills</h4>
-                                <ul>
-                                    <li>Fluent Communication</li>
-                                    <li>Teamwork & Leadership</li>
-                                    <li>Effective AI Communication</li>
-                                    <li>Problem Solving</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="languages">
-                        <h3>Languages</h3>
-                        <br>
-                        <br>
-                        <div class="language-list">
-                            <span class="language-badge">English (Fluent)</span>
-                            <span class="language-badge">Telugu (Native)</span>
-                            <span class="language-badge">Hindi (Proficient)</span>
-                        </div>
-                    </div>
+            <div className="skills-section">
+              <h3 className="sub-heading">Skills</h3>
+              <div className="skills-grid">
+                <div className="skill-category">
+                  <h4>Technical Skills</h4>
+                  <ul>
+                    <li>HTML & CSS</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>CAD & Fusion 360</li>
+                    <li>Adobe Photo Editing</li>
+                    <li>AI Prompting & Integration</li>
+                  </ul>
                 </div>
-
-                <div class="education-timeline">
-                    <h3 class="sub-heading">Education</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Secondary (10th CBSE)</h4>
-                                <p class="timeline-school">Saranya Concept School</p>
-                                <p class="timeline-date">GPA: 9.3</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Senior Secondary</h4>
-                                <p class="timeline-school">Saranya Concept School</p>
-                                <p class="timeline-date">GPA: 8.7</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>B.Tech Mechanical Engineering</h4>
-                                <p class="timeline-school">JNTUGV University</p>
-                                <p class="timeline-date">Batch of 2024 | Expected Graduation 2028</p>
-                            </div>
-                        </div>
-                    </div>
+                <div className="skill-category">
+                  <h4>Soft Skills</h4>
+                  <ul>
+                    <li>Fluent Communication</li>
+                    <li>Teamwork & Leadership</li>
+                    <li>Effective AI Communication</li>
+                    <li>Problem Solving</li>
+                  </ul>
                 </div>
+                <div className="skill-category languages">
+                  <h4>Languages</h4>
+                  <ul>
+                    <li>English (Fluent)</li>
+                    <li>Telugu (Native)</li>
+                    <li>Hindi (Proficient)</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-content">
-                <div class="projects-placeholder">
-                    <div class="placeholder-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>On the way...</h3>
-                    <p>Exciting projects are currently in development. Stay tuned for updates!</p>
-                    <div class="loading-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+            <div className="education-timeline">
+              <h3 className="sub-heading">Education</h3>
+              <div className="timeline">
+                <div className="timeline-item">
+                  <div className="timeline-dot"></div>
+                  <div className="timeline-content">
+                    <h4>Secondary (10th CBSE)</h4>
+                    <p className="timeline-school">Saranya Concept School</p>
+                    <p className="timeline-date">GPA: 9.3</p>
+                  </div>
                 </div>
+                <div className="timeline-item">
+                  <div className="timeline-dot"></div>
+                  <div className="timeline-content">
+                    <h4>Senior Secondary</h4>
+                    <p className="timeline-school">Saranya Concept School</p>
+                    <p className="timeline-date">GPA: 8.7</p>
+                  </div>
+                </div>
+                <div className="timeline-item">
+                  <div className="timeline-dot"></div>
+                  <div className="timeline-content">
+                    <h4>B.Tech Mechanical Engineering</h4>
+                    <p className="timeline-school">JNTUGV University</p>
+                    <p className="timeline-date">Batch of 2024 | Expected Graduation 2028</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-profile">
-                    <div class="profile-photo">
-                        <img src="https://res.cloudinary.com/dner8a9y0/image/upload/v1772382002/WhatsApp_Image_2026-02-28_at_11.55.03_AM_1_erj6rs.jpg"
-                            alt="Komarapuri Moksha Vardhan" class="profile-img">
-                    </div>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <a href="mailto:mokshamny333@gmail.com">mokshamny333@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone</h3>
-                            <a href="tel:+919392401867">+91 9392401867</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Location</h3>
-                            <p>Kakinada, Andhra Pradesh</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Instagram</h3>
-                            <a href="https://instagram.com/alwaysm33" target="_blank">@alwaysm33</a>
-                        </div>
-                    </div>
-                </div>
+      {/* Projects Section */}
+      <section id="projects" className="projects">
+        <div className="container">
+          <h2 className="section-title">Projects</h2>
+          <div className="projects-content">
+            <div className="projects-placeholder">
+              <div className="placeholder-icon">
+                <i className="fas fa-rocket"></i>
+              </div>
+              <h3>On the way...</h3>
+              <p>Exciting projects are currently in development. Stay tuned for updates!</p>
+              <div className="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <script src="script.js"></script>
+      {/* Contact Section */}
+      <section id="contact" className="contact">
+        <div className="container">
+          <h2 className="section-title">Get In Touch</h2>
+          <div className="contact-content">
+            <div className="contact-profile">
+              <div className="profile-photo">
+                <img
+                  src="https://res.cloudinary.com/dner8a9y0/image/upload/v1772382002/WhatsApp_Image_2026-02-28_at_11.55.03_AM_1_erj6rs.jpg"
+                  alt="Komarapuri Moksha Vardhan"
+                  className="profile-img"
+                />
+              </div>
+            </div>
+            <div className="contact-info">
+              <div className="contact-item">
+                <div className="contact-icon">
+                  <i className="fas fa-envelope"></i>
+                </div>
+                <div className="contact-details">
+                  <h3>Email</h3>
+                  <a href="mailto:mokshamny333@gmail.com">mokshamny333@gmail.com</a>
+                </div>
+              </div>
 
-    <!-- Firebase SDK -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
+              <div className="contact-item">
+                <div className="contact-icon">
+                  <i className="fas fa-phone"></i>
+                </div>
+                <div className="contact-details">
+                  <h3>Phone</h3>
+                  <a href="tel:+919392401867">+91 9392401867</a>
+                </div>
+              </div>
 
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyDYxZqIZhonAcZkFeee2PoyoXtNdN3-UqI",
-            authDomain: "myportfolio-ad8ff.firebaseapp.com",
-            projectId: "myportfolio-ad8ff",
-            storageBucket: "myportfolio-ad8ff.firebasestorage.app",
-            messagingSenderId: "1015259406045",
-            appId: "1:1015259406045:web:a8a33c746f6efbe2f3c534",
-            measurementId: "G-BSQ5V8PW7T"
-        };
+              <div className="contact-item">
+                <div className="contact-icon">
+                  <i className="fas fa-map-marker-alt"></i>
+                </div>
+                <div className="contact-details">
+                  <h3>Location</h3>
+                  <p>Kakinada, Andhra Pradesh</p>
+                </div>
+              </div>
 
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
-</body>
-
-</html>
+              <div className="contact-item">
+                <div className="contact-icon">
+                  <i className="fab fa-instagram"></i>
+                </div>
+                <div className="contact-details">
+                  <h3>Instagram</h3>
+                  <a href="https://instagram.com/alwaysm33" target="_blank" rel="noopener noreferrer">
+                    @alwaysm33
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
